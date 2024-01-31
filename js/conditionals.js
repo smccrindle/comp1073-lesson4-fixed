@@ -22,12 +22,15 @@ const comments = document.querySelector('#commentary');
 weatherButton.addEventListener("click", setWeather);
 
 function setWeather() {
-	console.log("setWeather function called!");
+	//console.log("setWeather function called!");
 	let choice = select.value;
 	let temperature = temp.value;
-	console.log(`Weather is ${choice} and temperature is ${temperature}.`);
+	//console.log(`Weather is ${choice} and temperature is ${temperature}.`);
 	/* STEP 2b: Craft an IF/ELSEIF/ELSE that changes the src attribute of the icon element to the appropriate .svg file in the images folder */
-
+	if (choice === "sunny") {
+		//Change weather icon
+		icon.setAttribute("src", "images/sunny.svg");
+	}
 	/* STEP 3: Add a nested IF/ELSE statement inside the 'sunny' condition above that tests for temperature, and if it is equal to or greater than 15, turn the page background orange, otherwise turn it lightblue */
 
 	/* STEP 4: Logical operators - and, or, not (delete multi-line comment delimiters below) */
