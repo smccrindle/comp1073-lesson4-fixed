@@ -1,7 +1,12 @@
 const output = document.querySelector('body p:nth-of-type(2)');
 		
 /* STEP 1a: A simple if/else statement */
-let homeWorkDone = null;
+let homeWorkDone = "Hi there!";
+if (homeWorkDone) {
+	console.log("My homework is done!");
+} else {
+	console.log("My homework is not done.");
+}
 
 // STEP 1b: Any value that is not false, undefined, null, 0, NaN, or an empty string will evaluate to TRUE when tested using a conditional statement - try a few other values for var homeWorkDone and test
 
@@ -14,9 +19,10 @@ const weatherButton = document.querySelector('#weatherButton');
 const comments = document.querySelector('#commentary');
 
 /* STEP 2a: Add an event listener for the 'click' event on the 'Set Weather' button that invokes the setWeather() function below */
-
+weatherButton.addEventListener("click", setWeather);
 
 function setWeather() {
+	console.log("setWeather function called!");
 	let choice = select.value;
 	let temperature = temp.value;
 	/* STEP 2b: Craft an IF/ELSEIF/ELSE that changes the src attribute of the icon element to the appropriate .svg file in the images folder */
