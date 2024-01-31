@@ -1,12 +1,12 @@
 const output = document.querySelector('body p:nth-of-type(2)');
 		
 /* STEP 1a: A simple if/else statement */
-let homeWorkDone = "Hi there!";
-if (homeWorkDone) {
-	console.log("My homework is done!");
-} else {
-	console.log("My homework is not done.");
-}
+// let homeWorkDone = "Hi there!";
+// if (homeWorkDone) {
+// 	console.log("My homework is done!");
+// } else {
+// 	console.log("My homework is not done.");
+// }
 
 // STEP 1b: Any value that is not false, undefined, null, 0, NaN, or an empty string will evaluate to TRUE when tested using a conditional statement - try a few other values for var homeWorkDone and test
 
